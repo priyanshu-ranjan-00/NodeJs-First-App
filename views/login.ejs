@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <form method="post", action="/login">
+            <h1>Login</h1>
+            <input type="email", name="email", placeholder="E-mail", value=" <%= locals.email %>"/>
+            <input type="password", name="password", placeholder="Put the 'complex' password"/>
+            <p class="error"> <%= locals.message %> </p>
+            <button type="submit">Login</button>
+        </form>
+    </main>
+    
+</body>
+<script src="script.js"></script>
+</html>
